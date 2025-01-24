@@ -1,0 +1,248 @@
+*{
+    /* การกำหนด font */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+    /* การกำหนด link style */
+    text-decoration: none ;
+
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+    /*---------manu---------*/
+    .container{
+        max-width: 1140px;
+        margin: 0 auto;
+    }
+
+    nav{
+        background-color: rgb(226, 140, 140);
+        overflow: hidden;
+    }
+   
+    .nav-con{
+       display: flex;
+       justify-content: space-between;
+       list-style: none;
+       margin-left: 10px;
+       padding: 14px 16px;
+   }
+
+   .manu{
+       display: flex;
+       overflow: hidden;
+   }
+
+   .manu li{
+       float: left;
+       color: mediumaquamarine;
+       list-style: none;
+       margin-left: 10px;
+       padding: 14px 16px;
+   }
+
+   .manu a:hover{
+        background-color: mediumpurple;
+    }
+
+   .manu a:active{
+       background-color: navajowhite;
+       text-decoration: none;
+     }
+   
+   a{
+       color: rgb(34, 14, 65);
+   }
+
+   .logo{
+       font-size: 30px;
+    }
+
+    /*-------------dropdownmenu-------------*/
+        /*------navbar container------*/
+.navbar{
+    overflow: hidden;
+    background-color: rgb(233, 190, 229);
+    /*font-family: impact, Haettenschweiler,'Arial Narrow Bold' sans-serif;*/
+}
+/*link inside navbar*/
+.navbar a {
+    float: left;
+    font-size: 14px;
+    color: rgb(28, 34, 19);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+/*dropdown-container*/
+.dropdown{
+    float: left;
+    overflow: hidden;
+}
+/*dropdown-btn*/
+.dropdown .dropbtn{
+    font-size: 14px;
+    border: none;
+    outline: none;
+    color: indianred;
+    padding: 14px 16px;
+    background-color: inherit;
+    margin: 0;
+}
+.navbar a:hover,.dropdown:hover .dropbtn{
+    background-color: rgb(145, 132, 219);
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: rgb(136, 212, 210);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+/*link inside dropdown*/
+.dropdown-content a{
+    float: none;
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown-content a:hover{
+    background-color: burlywood;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+
+    /*-------------table style--------------*/
+
+.styled-table{
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+}
+
+    /* การตกแต่งหัวข้อของตาราง */
+        .styled-table th{
+            background-color: darkseagreen; /*สีพื้นหลังของหัวข้อ*/
+            color: gainsboro;/*สีของตัวอักษรของหัวข้อ*/
+            text-align: center;/*ตำแหน่งของตัวอักษรให้อยู่ตรงกลาง*/
+            padding: 12px 15px;/*grbj, padding ด้านในหัวข้อ*/
+            font-size: 16px;/*ขนาดของตัวอักษร*/
+    }
+
+        /* ตกแต่งแถวของตาราง */ 
+        .styled-table td{
+            text-align: center;
+            padding: 12px 18px ;
+            /* border-collapse: collapse ; */
+            border-bottom: 1px solid steelblue;
+            font-size: 16px;
+    }
+
+        /* เปลี่ยนสีเมื่อวางเมาส์ */
+        .styled-table tr :hover{
+            background-color: rgb(161, 142, 114);
+    }
+        
+        /* เพิ่มเส้นขอบตาราง */
+        .styled-table , .styled-table th , .styled-table td{
+            border: 1px solid rgb(174, 236, 104);
+    }
+
+/* ------profile------ */
+.title {
+    justify-content: center;
+    padding: 12px;
+    text-align: center;
+}
+.pic {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    animation-fill-mode: none;
+}
+.pich-item {
+    max-width: 1140px;
+    justify-content: center;
+    text-align: center;
+    animation-fill-mode: none;
+}
+
+.pich-item img {
+    width: 300px; 
+    border-radius:100% ;
+    box-shadow: 0 0 10px  rgb(79, 158, 223);
+    align-items: center;
+    transition: 0.5s;
+}
+
+
+.pich-item img:hover {
+    transform: scale(1.1);
+}
+
+
+.pich-item {
+    font-family: ;
+    font-size: ;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.content-item {
+    border:1px rgb(23, 62, 235) solid;
+    padding: 12px;
+    background-color: cornsilk;
+}
+.content-item1 {
+    border:1px rgb(3, 26, 133) solid;
+    padding: 12px;
+    background-color: rgb(167, 234, 236);
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5) , rgba(0, 0, 0, 0.5);
+    margin-right: 20px;
+    border: 2px rgb(245, 144, 144)solid;
+    transition: 0.5s;
+}
+
+.content-item1:hover {
+    transform: scale(1.05);
+}
+
+.content-item2 {
+    border:1px rgb(3, 26, 133) solid;
+    padding: 12px;
+    background-color: rgb(185, 200, 240);
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5) , rgba(0, 0, 0, 0.5);
+    border: 2px rgb(233, 134, 134)solid;
+    transition: 0.5s;
+}
+
+.content-item2:hover {
+    transform: scale(1.05);
+}
+
+.content-item3 {
+    border:1px rgb(3, 26, 133) solid;
+    padding: 12px;
+    background-color: rgb(240, 241, 155);
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5) , rgba(0, 0, 0, 0.5);
+    margin-left: 20px;
+    border: 2px rgb(240, 127, 127)solid;
+    transition: 0.5s;
+}
+
+.content-item3:hover {
+    transform: scale(1.05);
+}
+
