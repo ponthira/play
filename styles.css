@@ -242,6 +242,51 @@
     transition: 0.5s;
 }
 
+/* ------Appreciation------ */
+.ma {
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+    font-variant: small-caps;
+    background-color: rgb(248, 234, 215);
+}
+
+
+.mo {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    animation-fill-mode: none;
+    background-color: rgb(212, 247, 238);
+}
+}
+.mo-item {
+    max-width: 1140px;
+    justify-content: center;
+    text-align: center;
+    animation-fill-mode: none;
+}
+.mo-item img {
+    box-shadow: 0 0 10px  rgb(79, 158, 223);
+    align-items: center;
+    transition: 0.5s;
+}
+.mo-item img:hover {
+    transform: scale(1.1);
+}
+
+.moma-item1 {
+    border:1px rgb(103, 122, 206) solid;
+    padding: 12px;
+    background-color: rgb(245, 207, 247);
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5) , rgba(0, 0, 0, 0.5);
+    margin-right: 20px;
+    border: 2px rgb(233, 164, 164)solid;
+    transition: 0.5s;
+    text-align: center;
+}
+
 .content-item3:hover {
     transform: scale(1.05);
 }
